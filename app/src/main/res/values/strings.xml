@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EX_BLE</string>
+    <string name="action_settings">Settings</string>
+    <string name="ble_not_supported">BLE not supported</string>
+
+    <!-- Main UI items -->
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="switch_service_start">Service Start</string>
+    <string name="switch_led2">LED 2</string>
+    <string name="switch_led3">LED 3</string>
+    <string name="switch_led4">LED 4</string>
+    <string name="switch_led5">LED 5</string>
+    <string name="switch_led6">LED 6</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_name">Device Name:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="label_control">Control:</string>
+    <string name="label_measurement">Battery Level:</string>
+    <string name="label_large_data">Pressed Button:</string>
+    <string name="btn_scan">Scan Peripheral</string>
+    <string name="btn_connectgatt_false">BluetoothDevice.connectGatt(,autoConnect=false,)</string>
+    <string name="btn_connectgatt_true">BluetoothDevice.connectGatt(,autoConnect=true,)</string>
+    <string name="btn_disconnect_peripheral">BluetoothGatt.disconnect</string>
+    <string name="btn_connect_known_peripheral">BluetoothGatt.connect</string>
+    <string name="btn_close">BluetoothGatt.close</string>
+    <!-- Setting UI items -->
+    <string name="label_reconnectiontimeout">Reconnection Timeout (0~3600s) :</string>
+    <string name="label_advertisingtimeout">Advertising Timeout (120~86400s) :</string>
+    <string name="label_advertisinginterval">Advertising Interval (20~5000ms) :</string>
+</resources>

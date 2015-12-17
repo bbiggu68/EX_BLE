@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.95"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblCentralReconnectionTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_reconnectiontimeout"
+                android:textSize="@dimen/ui_btn" />
+
+            <EditText
+                android:id="@+id/edtReconnectionTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:text="0"
+                android:textSize="@dimen/ui_btn" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/skbReconnectionTimeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="3600" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblPeripheralAdvertisingTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_advertisingtimeout"
+                android:textSize="@dimen/ui_btn" />
+
+            <EditText
+                android:id="@+id/edtAdvertisingTimeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:text="120"
+                android:textSize="@dimen/ui_btn" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/skbAdvertisingTimeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="86280" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lblPeripheralAdvertisingInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_advertisinginterval"
+                android:textSize="@dimen/ui_btn" />
+
+            <EditText
+                android:id="@+id/edtAdvertisingInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:text="20"
+                android:textSize="@dimen/ui_btn" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/skbAdvertisingInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4980" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSetupOK"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:onClick="mOnClick"
+            android:text="확인"
+            android:textSize="@dimen/result_text" />
+    </LinearLayout>
+</LinearLayout>
